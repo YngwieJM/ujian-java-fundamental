@@ -16,22 +16,21 @@ public class Praktikum1 {
         int hasil = 0;
 
         for (int i = 0; i < inputString.length(); i ++) {
-            char charStr = inputString.charAt(i);
 
-            if (charStr >= ' ' && charStr <= '/') {
-                hasil += (int) charStr;
+            if (inputString.charAt(i) >= ' ' && inputString.charAt(i) <= '/') {
+                hasil += (int) inputString.charAt(i);
 
-            } else if (charStr >= '0' && charStr <= '9') {
-                hasil += (int) charStr;
+            } else if (inputString.charAt(i) >= '0' && inputString.charAt(i) <= '9') {
+                hasil += (int) inputString.charAt(i);
 
-            } else if (charStr >= ':' && charStr <= '@') {
-                hasil += (int) charStr;
+            } else if (inputString.charAt(i) >= ':' && inputString.charAt(i) <= '@') {
+                hasil += (int) inputString.charAt(i);
 
-            } else if (charStr >= 'A' && charStr <= 'Z') {
-                hasil += (int) charStr;
+            } else if (inputString.charAt(i) >= 'A' && inputString.charAt(i) <= 'Z') {
+                hasil += (int) inputString.charAt(i);
 
-//            } else if (charStr >= 'a' && charStr <= 'z') {    //huruf kecil exclude
-//                hasil += (int) charStr;
+//            } else if (inputString.charAt(i) >= 'a' && inputString.charAt(i) <= 'z') {    //huruf kecil exclude
+//                hasil += (int) inputString.charAt(i);
             }
         }
         System.out.println("Hasil : "+ hasil);
