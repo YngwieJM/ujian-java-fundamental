@@ -18,10 +18,13 @@ public class Praktikum1 {
         for (int i = 0; i < inputString.length(); i ++) {
             char charStr = inputString.charAt(i);
 
-            if (charStr >= ' ' && charStr <= '@') {
+            if (charStr >= ' ' && charStr <= '/') {
                 hasil += (int) charStr;
 
             } else if (charStr >= '0' && charStr <= '9') {
+                hasil += (int) charStr;
+
+            } else if (charStr >= ':' && charStr <= '@') {
                 hasil += (int) charStr;
 
             } else if (charStr >= 'A' && charStr <= 'Z') {
@@ -29,7 +32,6 @@ public class Praktikum1 {
 
 //            } else if (charStr >= 'a' && charStr <= 'z') {    //huruf kecil exclude
 //                hasil += (int) charStr;
-
             }
         }
         System.out.println("Hasil : "+ hasil);
